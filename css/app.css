@@ -551,6 +551,12 @@ section{
     transition:all 400ms linear 0s;
     color:#677fb5
 }
+button a{
+    color: rgba(0,0,0,0.5);
+}
+button a:hover{
+    color: rgba(0,0,0,0.5);
+}
 
 .social_icon li.face a {
     color:#26adec;
@@ -568,7 +574,6 @@ section{
 
 .foot{
     width: 100%;
-    display: block;
 }
 
 .foot h3, .foot h1{
@@ -581,5 +586,13 @@ section{
 
 .foot strong{
     color: #ffff;
+}
+
+.card{
+    height: 80%;
+}
+.container.foot{
+    margin: 0px;
+    width: 100%;
 }
   
