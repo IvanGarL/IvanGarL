@@ -42,7 +42,6 @@ header{
     padding:  0 0 0;
     border-bottom: #000;
 
-
     -moz-border-radius: 0px;
     -webkit-border-radius: 0px;
     border-radius: 0px;
@@ -53,6 +52,21 @@ header{
 }
 .navbar-header {
     text-align: right;
+}
+
+ul.nav li {
+    margin: 0 2px 0 2px;
+    border-radius: 2px;
+}
+
+ul.nav li a.nav-link{
+    margin: 0 2px 0 2px;
+    border-radius: 2px;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+ul.nav li a.nav-link:hover{
+    color: #2c98f0;
 }
 
 .wrapper {
@@ -201,28 +215,37 @@ h1, h2, h3, h4, h5, h6 {
     color: #000;
     font-family: 'Merriweather', serif;    
     font-weight: 400;
+    margin: 10px
     /*Margin for paragraphs in clock way: top | right  | bottom  | left*/
 }
 
 h4.brand{
     margin: 0 0 0 0;
+    color: rgba(255, 255, 255, 0.875);
 }
 
 h4.content, h6.content{
-    margin: 25px 0 25px 0;
+    margin: 25px 0 8px 0;
+    padding: 0 0 0 7px;
+}
+
+h3.content_header{
+    margin: 15px 0 25px 0;
+    color: #73736f;
+    font-weight: 350;
 }
 
 .brand {
     display: block;
     font-family: 'Montserrat Subrayada', sans-serif;
     font-style: normal;
-    font-size: 28px;
+    font-size: 24px;
     font-weight: bold;
     margin: 0 0 0 0
 
 }
 
-@media screen and (max-height: 812px) { 
+@media screen and (max-width: 768px) { 
     /* Set a diferent font-size to small devices with @media screen rule */
     .brand {
         font-size: 20px; 
@@ -230,6 +253,10 @@ h4.content, h6.content{
     .img-about-circular-info{
         float:none;
     }
+}
+
+a {
+    transition: all 0.8s linear;
 }
 
 a.nav-link{
@@ -284,6 +311,7 @@ section{
     width: 100%;
     margin: 0 0 0 0;
     background-color: #f2f3f7;
+    border-radius: 10px;
 }
 
 .cv{
@@ -298,8 +326,6 @@ section{
 
 .img-about-circular {
     border-radius: 50%;
-    margin-left: auto;
-    margin-right: auto;
     max-width: 200px;
     max-height: 200px;
     margin: 10% 12% 10% 12%;
@@ -325,16 +351,15 @@ section{
   
 .progress {
     height: 6px;
+    width: inherit;
     -webkit-box-shadow: none;
     box-shadow: none;
-    background: #f2f3f7;
+    background: #ffffff;
     overflow: visible; 
 }
 
-.progress-wrap h3 {
-    font-size: 16px;
-    font-family: "Quicksand", Arial, sans-serif;
-    margin-bottom: 10px; 
+.progress-wrap{
+    width:inherit;
 }
   
 .progress-bar {
@@ -395,7 +420,8 @@ section{
     background: #f9bf3f; }
   
 .progress-bar.color-3 span {
-    color: #f9bf3f; }
+    color: #f9bf3f; 
+}
   
 .progress-bar.color-5 {
   background: #2fa499; }
@@ -405,20 +431,155 @@ section{
   
 .progress-bar.color-5 span {
     color: #2fa499; }
-  
-.progress-bar.color-6 {
-  background: #4054b2; }
-  
-.progress-bar.color-6:after {
-    background: #4054b2; }
-  
-.progress-bar.color-6 span {
-    color: #4054b2; }
 
 
+.skills-block {
+    display: inline-block;
+}
+.skills-inline {
+    display: inline;
+}
 
+.fa-hands-helping{
+    color: #2c98f0;
+}
 
+.fa-fist-raised {
+    color: #2fa499;  
+}
 
+.fa-smile-beam {
+    color: #f9bf3f; 
+}
 
+.fa-hiking {
+    color: #ec5453; 
+}
 
+.timeline-centered .timeline-entry {
+    position: relative;
+    margin-top: 5px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    clear: both; }
+
+.timeline-centered .timeline-entry .timeline-entry-inner {
+    position: relative;
+    margin-left: -20px; }
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: #2c98f0;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    -moz-box-shadow: 0 0 0 5px #ffffff;
+    -webkit-box-shadow: 0 0 0 5px #ffffff;
+    box-shadow: 0 0 0 5px #ffffff;
+    line-height: 40px;
+    float: left; }
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-2 {
+    background: #ec5453; }
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-3 {
+    background: #f9bf3f; }
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-4 {
+    background: #a84cb8; }
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-5 {
+    background: #2fa499; }
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-none {
+    background: #ffff;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px; }
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label {
+    position: relative;
+    background: #ffffff;
+    padding: 1.5em;
+    margin-left: 60px;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box; }
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 9px 9px 9px 0;
+    border-color: transparent #ffffff transparent transparent;
+    left: 0;
+    top: 10px;
+    margin-left: -9px; }
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label p + p {
+    margin-top: 15px; }
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h2 span {
+    -webkit-opacity: .4;
+    -moz-opacity: .4;
+    opacity: .4;
+    -ms-filter: alpha(opacity=40);
+    filter: alpha(opacity=40);
+    font-size: 16px; }
+
+.h-negro{
+    border-bottom-style: solid; 
+    border-bottom-color: #000000; 
+    border-bottom-width: 4px;
+}
+
+.social_icon li{
+    display:inline-block;
+    margin-right:20px
+}
+.social_icon li a {
+    height:40px;
+    width:40px;
+    padding-bottom: 5px;
+    text-align:center;
+    border:1px solid #677fb5;
+    display:block;line-height:40px;
+    font-size:18px;border-radius:5px;
+    transition:all 400ms linear 0s;
+    color:#677fb5
+}
+
+.social_icon li.face a {
+    color:#26adec;
+}
+.social_icon li.twit a{
+    color:#7ac7eb
+}
+.social_icon li.insta a { 
+    color:#895a4d;
+}
+
+.social_icon li a.nav-link:hover { 
+    background-color: #ffff;
+}
+
+.foot{
+    width: 100%;
+    display: block;
+}
+
+.foot h3, .foot h1{
+    color: #ffff;
+}
+
+.foot p{
+    color: #ffff;
+}
+
+.foot strong{
+    color: #ffff;
+}
   
