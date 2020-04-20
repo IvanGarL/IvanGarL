@@ -1,5 +1,5 @@
 # IvanGarL
-Personal Web Page.
+Personal Web Page. - **currenty not updated (last update, 2019-2nd semester)**
 
 Some of the styles used in this aplication has been taken and modified from
 Colorlib.com examples, specificly from https://colorlib.com/wp/template/jackson/
